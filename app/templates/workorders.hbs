@@ -16,8 +16,8 @@
 		{{#each model as |wo|}}
 		<tr>
 			<td>{{wo.id}}</td>
-			<td>{{wo.dateCreated}}</td>
-			<td>{{wo.dateCompleted}}</td>
+			<td>{{shortDate wo.dateCreated}}</td>
+			<td>{{shortDate wo.dateCompleted}}</td>
 			<td>{{wo.assignedTo}}</td>
 			<td>{{wo.createdBy}}</td>
 			<td>{{wo.priority}}</td>

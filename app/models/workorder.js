@@ -14,8 +14,8 @@ Workorder.reopenClass({
 	FIXTURES: [
 		{
 			id: 1,
-			dateCreated: "2015-02-07T16:44:57.000Z",
-			dateCompleted: "2015-02-07T16:44:57.000Z",
+			dateCreated: "2015-02-13T16:44:57.000Z",
+			dateCompleted: "2015-01-07T16:44:57.000Z",
 			assignedTo: "Mike Miller",
 			createdBy: "Mario",
 			priority: "TOP",
@@ -24,7 +24,7 @@ Workorder.reopenClass({
 		},
 		{
 			id: 2,
-			dateCreated: "2015-02-07T16:44:57.000Z",
+			dateCreated: "2015-01-13T16:44:57.000Z",
 			dateCompleted: "2015-02-07T16:44:57.000Z",
 			assignedTo: "Mr Schmidth",
 			createdBy: "Luigi",
@@ -34,8 +34,8 @@ Workorder.reopenClass({
 		},
 		{
 			id: 3,
-			dateCreated: "2015-02-07T16:44:57.000Z",
-			dateCompleted: "2015-02-07T16:44:57.000Z",
+			dateCreated: "2015-02-13T16:44:57.000Z",
+			dateCompleted: "2014-12-10T16:44:57.000Z",
 			assignedTo: "John Doe",
 			createdBy: "Toad",
 			priority: "LOW",
