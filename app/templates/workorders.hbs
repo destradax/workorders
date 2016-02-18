@@ -9,12 +9,20 @@
 			<th>Created By</th>
 			<th>Priority</th>
 			<th>Status</th>
+			<th>State</th>
 		</tr>
 	</thead>
 	<tbody>
 		{{#each model as |wo|}}
 		<tr>
-			<td>wo</td>
+			<td>{{wo.id}}</td>
+			<td>{{wo.dateCreated}}</td>
+			<td>{{wo.dateCompleted}}</td>
+			<td>{{wo.assignedTo}}</td>
+			<td>{{wo.createdBy}}</td>
+			<td>{{wo.priority}}</td>
+			<td>{{wo.status}}</td>
+			<td>{{wo.state}}</td>
 		</tr>
 		{{/each}}
 	</tbody>
