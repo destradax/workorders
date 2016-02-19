@@ -14,7 +14,7 @@
 	</thead>
 	<tbody>
 		{{#each model as |wo|}}
-		<tr>
+		<tr {{action "goToDetails" wo on="doubleClick"}}>
 			<td>{{wo.id}}</td>
 			<td>{{shortDate wo.dateCreated}}</td>
 			<td>{{shortDate wo.dateCompleted}}</td>

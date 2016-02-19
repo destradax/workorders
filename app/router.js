@@ -6,7 +6,9 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('workorders');
+  this.route('workorders', function() {
+    this.route('details', {path: ":workorder_id"});
+  });
 });
 
 export default Router;
