@@ -1,4 +1,20 @@
 <h1>Workorders</h1>
+
+<div class="searc">
+	<form {{action "search" on="submit"}}>
+		ID: {{input value=searchParams.id}}
+		dateCreated: {{input value=searchParams.dateCreated}}
+		dateCompleted: {{input value=searchParams.dateCompleted}}
+		assignedTo: {{input value=searchParams.assignedTo}}
+		createdBy: {{input value=searchParams.createdBy}}
+		priority: {{input value=searchParams.priority}}
+		status: {{input value=searchParams.status}}
+		state: {{input value=searchParams.state}}
+		requestType: {{input value=searchParams.requestType}}
+		<button type="submit" name="button">Search</button>
+	</form>
+</div>
+
 <table>
 	<thead>
 		<tr>
@@ -14,7 +30,7 @@
 	</thead>
 	<tbody>
 		{{#each model as |wo|}}
-		<tr {{action "goToDetails" wo on="doubleClick"}}>
+		<tr {{action "showWorkorder" wo on="doubleClick"}}>
 			<td>{{wo.id}}</td>
 			<td>{{shortDate wo.dateCreated}}</td>
 			<td>{{shortDate wo.dateCompleted}}</td>
